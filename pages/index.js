@@ -1,6 +1,9 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import Image from "next/image";
+import styles from "../styles/Home.module.css";
+import Button from "react-bootstrap/Button";
+import Navbar from "react-bootstrap/Navbar";
+import { Nav } from "react-bootstrap";
 
 export default function Home() {
   return (
@@ -11,59 +14,72 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+      <header id="header" className="d-flex flex-column justify-content-center">
+        <Navbar id="navbar" className={styles.nav_menu}>
+          <ul>
+            <li>
+              <Nav.Link href="#hero" className="nav-link scrollto active">
+                <i className="bx bx-home"></i> <span>Home</span>
+              </Nav.Link>
+            </li>
+            <li>
+              <a href="#about" className="nav-link scrollto">
+                <i className="bx bx-user"></i> <span>About</span>
+              </a>
+            </li>
+            <li>
+              <a href="#resume" className="nav-link scrollto">
+                <i className="bx bx-file-blank"></i> <span>Resume</span>
+              </a>
+            </li>
+            <li>
+              <a href="#portfolio" className="nav-link scrollto">
+                <i className="bx bx-book-content"></i> <span>Portfolio</span>
+              </a>
+            </li>
+            <li>
+              <a href="#services" className="nav-link scrollto">
+                <i className="bx bx-server"></i> <span>Services</span>
+              </a>
+            </li>
+            <li>
+              <a href="#contact" className="nav-link scrollto">
+                <i className="bx bx-envelope"></i> <span>Contact</span>
+              </a>
+            </li>
+          </ul>
+        </Navbar>
+      </header>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+      <section id="hero" className="d-flex flex-column justify-content-center">
+        <div className="container" data-aos="zoom-in" data-aos-delay="100">
+          <h1>Brandon Johnson</h1>
+          <p>
+            Im{" "}
+            <span
+              className="typed"
+              data-typed-items="Designer, Developer, Freelancer, Photographer"
+            ></span>
+          </p>
+          <div className="social-links">
+            <a href="#" className="twitter">
+              <i className="bx bxl-twitter"></i>
+            </a>
+            <a href="#" className="facebook">
+              <i className="bx bxl-facebook"></i>
+            </a>
+            <a href="#" className="instagram">
+              <i className="bx bxl-instagram"></i>
+            </a>
+            <a href="#" className="google-plus">
+              <i className="bx bxl-skype"></i>
+            </a>
+            <a href="#" className="linkedin">
+              <i className="bx bxl-linkedin"></i>
+            </a>
+          </div>
         </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
+      </section>
     </div>
-  )
+  );
 }
