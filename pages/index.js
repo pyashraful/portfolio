@@ -1,6 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Header from "../components/header/Header";
+import About from "../components/about/About";
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -41,8 +42,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      <section id="about" className="about">
+      <About />
+      {/* <section id="about" className="about">
         <div className="container" data-aos="fade-up">
           <div className="section-title">
             <h2>About</h2>
@@ -123,8 +124,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
-      {/* <!-- End About Section --> */}
+      </section> */}
     </div>
   );
 }
