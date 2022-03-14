@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Details from "./details/Details";
 // import AboutImage from "../../public/img/portfolio/profile-img.jpg";
 
 export default function About() {
@@ -18,7 +19,7 @@ export default function About() {
         <div className="row">
           <div className="col-lg-4">
             <Image
-              src="/public/img/portfolio/profile-img.jpg"
+              src="/img/profile-img.jpg"
               className="img-fluid"
               alt=""
               width="100%"
@@ -34,7 +35,7 @@ export default function About() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
-            <div className="row">
+            {/* <div className="row">
               <div className="col-lg-6">
                 <ul>
                   <li>
@@ -75,7 +76,10 @@ export default function About() {
                   </li>
                 </ul>
               </div>
-            </div>
+            </div> */}
+
+            <Details />
+
             <p>
               Officiis eligendi itaque labore et dolorum mollitia officiis optio
               vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor
