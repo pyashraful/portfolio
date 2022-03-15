@@ -5,6 +5,8 @@ import About from "../components/about/About";
 import Skills from "../components/skills/Skills";
 import Resume from "../components/resume/Resume";
 import Portfolio from "../components/portfolio/Portfolio";
+import Services from "../components/services/Services";
+import Contact from "../components/Contact/Contact";
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -49,6 +51,8 @@ export default function Home() {
       <Skills />
       <Resume />
       <Portfolio />
+      <Services />
+      <Contact />
     </div>
   );
 }
