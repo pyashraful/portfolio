@@ -7,6 +7,7 @@ import Resume from "../components/resume/Resume";
 import Portfolio from "../components/portfolio/Portfolio";
 import Services from "../components/services/Services";
 import Contact from "../components/Contact/Contact";
+import Footer from "../components/footer.js/Footer";
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -53,6 +54,7 @@ export default function Home() {
       <Portfolio />
       <Services />
       <Contact />
+      <Footer />
     </div>
   );
 }
