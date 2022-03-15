@@ -4,6 +4,7 @@ import Header from "../components/header/Header";
 import About from "../components/about/About";
 import Skills from "../components/skills/Skills";
 import Resume from "../components/resume/Resume";
+import Portfolio from "../components/portfolio/Portfolio";
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -47,6 +48,7 @@ export default function Home() {
       <About />
       <Skills />
       <Resume />
+      <Portfolio />
     </div>
   );
 }
