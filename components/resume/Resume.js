@@ -26,8 +26,8 @@ export default function Resume() {
                 </em>
               </p>
               <ul>
-                <li>Portland par 127,Orlando, FL</li>
-                <li>(123) 456-7891</li>
+                <li>Dhaka, Bangladesh</li>
+                <li>+880 1856-454-154</li>
                 <li>alice.barkley@example.com</li>
               </ul>
             </div>
