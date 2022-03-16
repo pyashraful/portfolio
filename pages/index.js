@@ -8,6 +8,7 @@ import Portfolio from "../components/portfolio/Portfolio";
 import Services from "../components/services/Services";
 import Contact from "../components/Contact/Contact";
 import Footer from "../components/footer.js/Footer";
+import Hero from "../components/hero/Hero";
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -19,35 +20,7 @@ export default function Home() {
 
       <Header />
 
-      <section id="hero" className="d-flex flex-column justify-content-center">
-        <div className="container" data-aos="zoom-in" data-aos-delay="100">
-          <h1>Brandon Johnson</h1>
-          <p>
-            Im{" "}
-            <span
-              className="typed"
-              data-typed-items="Designer, Developer, Freelancer, Photographer"
-            ></span>
-          </p>
-          <div className="social-links">
-            <a href="#" className="twitter">
-              <i className="bx bxl-twitter"></i>
-            </a>
-            <a href="#" className="facebook">
-              <i className="bx bxl-facebook"></i>
-            </a>
-            <a href="#" className="instagram">
-              <i className="bx bxl-instagram"></i>
-            </a>
-            <a href="#" className="google-plus">
-              <i className="bx bxl-skype"></i>
-            </a>
-            <a href="#" className="linkedin">
-              <i className="bx bxl-linkedin"></i>
-            </a>
-          </div>
-        </div>
-      </section>
+      <Hero />
       <About />
       <Skills />
       <Resume />

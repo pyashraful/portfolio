@@ -16,7 +16,7 @@ export default function Resume() {
           <div className="col-lg-6">
             <h3 className="resume-title">Sumary</h3>
             <div className="resume-item pb-0">
-              <h4>Brandon Johnson</h4>
+              <h4>MD Ashraful Islam</h4>
               <p>
                 <em>
                   Innovative and deadline-driven Graphic Designer with 3+ years
@@ -34,10 +34,10 @@ export default function Resume() {
 
             <h3 className="resume-title">Education</h3>
             <div className="resume-item">
-              <h4>Master of Fine Arts &amp; Graphic Design</h4>
-              <h5>2015 - 2016</h5>
+              <h4>Bachelor of Science in Computer Science and Engineering</h4>
+              <h5>2018 - Running</h5>
               <p>
-                <em>Rochester Institute of Technology, Rochester, NY</em>
+                <em>Bangladesh University of Business and Technology (BUBT)</em>
               </p>
               <p>
                 Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam
@@ -46,10 +46,10 @@ export default function Resume() {
               </p>
             </div>
             <div className="resume-item">
-              <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
-              <h5>2010 - 2014</h5>
+              <h4>Diploma in Computer Engineering</h4>
+              <h5>2013 - 2018</h5>
               <p>
-                <em>Rochester Institute of Technology, Rochester, NY</em>
+                <em>BCI Engineering Institute, Dhaka, Bangladesh</em>
               </p>
               <p>
                 Quia nobis sequi est occaecati aut. Repudiandae et iusto quae
