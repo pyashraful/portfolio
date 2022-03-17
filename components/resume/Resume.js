@@ -19,10 +19,11 @@ export default function Resume() {
               <h4>MD Ashraful Islam</h4>
               <p>
                 <em>
-                  Innovative and deadline-driven Graphic Designer with 3+ years
-                  of experience designing and developing user-centered
-                  digital/print marketing material from initial concept to
-                  final, polished deliverable.
+                  Growing up as a tech lover, I love coding and creating
+                  beautiful things that make the world a better place. I'm
+                  excited to contribute in a meaningful way to an awesome
+                  company! My favorite technology is React. I have built
+                  multiple functional projects with it.
                 </em>
               </p>
               <ul>
