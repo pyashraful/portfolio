@@ -20,7 +20,7 @@ export default function Resume() {
               <p>
                 <em>
                   Growing up as a tech lover, I love coding and creating
-                  beautiful things that make the world a better place. I'm
+                  beautiful things that make the world a better place. I&apos;m
                   excited to contribute in a meaningful way to an awesome
                   company! My favorite technology is React. I have built
                   multiple functional projects with it.
@@ -40,11 +40,6 @@ export default function Resume() {
               <p>
                 <em>Bangladesh University of Business and Technology (BUBT)</em>
               </p>
-              <p>
-                Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam
-                iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti
-                nerada porti sand markend
-              </p>
             </div>
             <div className="resume-item">
               <h4>Diploma in Computer Engineering</h4>
@@ -52,12 +47,9 @@ export default function Resume() {
               <p>
                 <em>BCI Engineering Institute, Dhaka, Bangladesh</em>
               </p>
-              <p>
-                Quia nobis sequi est occaecati aut. Repudiandae et iusto quae
-                reiciendis et quis Eius vel ratione eius unde vitae rerum
-                voluptates asperiores voluptatem Earum molestiae consequatur
-                neque etlon sader mart dila
-              </p>
+              <p>Bangladesh Technical Education Board</p>
+              <p>Year: 2013 -2018</p>
+              <p>GPA: 3.00 out of 4</p>
             </div>
           </div>
           <div className="col-lg-6">
