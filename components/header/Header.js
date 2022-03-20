@@ -15,7 +15,7 @@ export default function Header() {
           <ul>
             <li>
               <Nav.Link href="#hero" className="nav-link scrollto active">
-                <BsFillPersonFill className={styles.icons} />
+                <i className="bi bi-person-fill"></i>
                 <span>Home</span>
               </Nav.Link>
             </li>

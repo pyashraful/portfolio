@@ -52,22 +52,22 @@
   overflow: hidden;
   transition: 0.3s;
 }
-/* 
+
 .nav_menu a i,
 .nav_menu a:focus i {
   font-size: 20px;
-} */
+}
 
-.icons,
+/* .icons,
 .icon:focus {
   height: 20px;
   width: 20px;
   /* color: red; */
-}
-
-/* .icons {
-  color: #45505b;
 } */
+
+.icons {
+  color: #45505b;
+}
 
 .nav_menu a span,
 .nav_menu a:focus span {
