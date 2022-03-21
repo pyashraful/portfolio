@@ -15,13 +15,14 @@ export default function Header() {
           <ul>
             <li>
               <Nav.Link href="#hero" className="nav-link scrollto active">
-                <i className="bi bi-person-fill"></i>
+                <i className="bi bi-house-fill"></i>
                 <span>Home</span>
               </Nav.Link>
             </li>
             <li>
               <a href="#about" className="nav-link scrollto">
-                <i className="bx bx-user"></i> <span>About</span>
+                <i className="bi bi-person-fill"></i>
+                <span>About</span>
               </a>
             </li>
             <li>
