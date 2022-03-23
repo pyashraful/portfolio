@@ -1,7 +1,7 @@
 import Navbar from "react-bootstrap/Navbar";
 import { Nav } from "react-bootstrap";
 import styles from "./header.module.css";
-import { BsFillPersonFill } from "react-icons/bs";
+import { BiUser } from "react-icons/bi";
 
 export default function Header() {
   return (
@@ -11,17 +11,18 @@ export default function Header() {
         id={styles.header}
         className="d-flex flex-column justify-content-center"
       >
-        <Navbar id="navbar" className={styles.nav_menu}>
+        <nav id="navbar" className={` navbar ${styles.nav_menu}`}>
           <ul>
             <li>
               <Nav.Link href="#hero" className="nav-link scrollto active">
-                <i className="bi bi-house-fill"></i>
+                <i className="bx bx-home"></i>
                 <span>Home</span>
               </Nav.Link>
             </li>
             <li>
               <a href="#about" className="nav-link scrollto">
-                <i className="bi bi-person-fill"></i>
+                {/* <i className="bx bx-user"></i> */}
+                <BiUser />
                 <span>About</span>
               </a>
             </li>
@@ -46,7 +47,7 @@ export default function Header() {
               </a>
             </li>
           </ul>
-        </Navbar>
+        </nav>
       </header>
     </div>
   );

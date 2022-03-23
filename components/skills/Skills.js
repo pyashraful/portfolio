@@ -64,7 +64,7 @@ export default function Skills() {
             <div className="col-lg-6">
               <div className="progress">
                 <span className="skill">
-                  PHP <i className="val">80%</i>
+                  React js <i className="val">80%</i>
                 </span>
                 <div className="progress-bar-wrap">
                   <div
@@ -79,7 +79,7 @@ export default function Skills() {
 
               <div className="progress">
                 <span className="skill">
-                  WordPress/CMS <i className="val">90%</i>
+                  Node js <i className="val">90%</i>
                 </span>
                 <div className="progress-bar-wrap">
                   <div
@@ -94,7 +94,7 @@ export default function Skills() {
 
               <div className="progress">
                 <span className="skill">
-                  Photoshop <i className="val">55%</i>
+                  MongoDB <i className="val">55%</i>
                 </span>
                 <div className="progress-bar-wrap">
                   <div
