@@ -22,16 +22,17 @@ export default function Home() {
         />
       </Head>
 
-      <Header />
-
-      <Hero />
-      <About />
-      <Skills />
-      <Resume />
-      <Portfolio />
-      <Services />
-      <Contact />
-      <Footer />
+      <main id="main">
+        <Header />
+        <Hero />
+        <About />
+        <Skills />
+        <Resume />
+        <Portfolio />
+        <Services />
+        <Contact />
+        <Footer />
+      </main>
     </div>
   );
 }

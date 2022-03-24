@@ -64,9 +64,10 @@
   width: 20px;
 } */
 
-.nav_menu svg {
+.nav_menu svg .nav_menu a:focus svg {
   height: 20px;
   width: 20px;
+  flex: shirink 0;
 }
 
 /* .icons {
