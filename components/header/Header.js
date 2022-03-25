@@ -1,7 +1,14 @@
 import Navbar from "react-bootstrap/Navbar";
 import { Nav } from "react-bootstrap";
 import styles from "./header.module.css";
-import { BiUser } from "react-icons/bi";
+import {
+  BiHome,
+  BiUser,
+  BiFileBlank,
+  BiBookContent,
+  BiServer,
+  BiEnvelope,
+} from "react-icons/bi";
 
 export default function Header() {
   return (
@@ -15,35 +22,36 @@ export default function Header() {
           <ul>
             <li>
               <Nav.Link href="#hero" className="nav-link scrollto active">
-                <i className="bx bx-home"></i>
+                <BiHome className={styles.nav_icons} />
                 <span>Home</span>
               </Nav.Link>
             </li>
             <li>
               <a href="#about" className="nav-link scrollto">
                 {/* <i className="bx bx-user"></i> */}
-                <BiUser />
+                <BiUser className={styles.nav_icons} />
                 <span>About</span>
               </a>
             </li>
             <li>
               <a href="#resume" className="nav-link scrollto">
-                <i className="bx bx-file-blank"></i> <span>Resume</span>
+                <BiFileBlank className={styles.nav_icons} /> <span>Resume</span>
               </a>
             </li>
             <li>
               <a href="#portfolio" className="nav-link scrollto">
-                <i className="bx bx-book-content"></i> <span>Portfolio</span>
+                <BiBookContent className={styles.nav_icons} />{" "}
+                <span>Portfolio</span>
               </a>
             </li>
             <li>
               <a href="#services" className="nav-link scrollto">
-                <i className="bx bx-server"></i> <span>Services</span>
+                <BiServer className={styles.nav_icons} /> <span>Services</span>
               </a>
             </li>
             <li>
               <a href="#contact" className="nav-link scrollto">
-                <i className="bx bx-envelope"></i> <span>Contact</span>
+                <BiEnvelope className={styles.nav_icons} /> <span>Contact</span>
               </a>
             </li>
           </ul>
