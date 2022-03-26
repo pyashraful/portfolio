@@ -1,7 +1,14 @@
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaInstagram,
+  FaSkype,
+  FaLinkedinIn,
+} from "react-icons/fa";
 export default function Hero() {
   return (
     <section id="hero" className="d-flex flex-column justify-content-center">
-      <div className="container" data-aos="zoom-in" data-aos-delay="100">
+      <div className="container">
         <h1>MD Ashraful Islam</h1>
         <p>
           Im{" "}
@@ -12,19 +19,19 @@ export default function Hero() {
         </p>
         <div className="social-links">
           <a href="#" className="twitter">
-            <i className="bx bxl-twitter"></i>
+            <FaTwitter className="hero_soccial_icon" />
           </a>
           <a href="#" className="facebook">
-            <i className="bx bxl-facebook"></i>
+            <FaFacebookF />
           </a>
           <a href="#" className="instagram">
-            <i className="bx bxl-instagram"></i>
+            <FaInstagram className="hero_soccial_icon" />
           </a>
           <a href="#" className="google-plus">
-            <i className="bx bxl-skype"></i>
+            <FaSkype className="hero_soccial_icon" />
           </a>
           <a href="#" className="linkedin">
-            <i className="bx bxl-linkedin"></i>
+            <FaLinkedinIn className="hero_soccial_icon" />
           </a>
         </div>
       </div>
