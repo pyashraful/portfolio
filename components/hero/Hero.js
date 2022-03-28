@@ -10,16 +10,18 @@ import {
 export default function Hero() {
   return (
     <section id="hero" className="d-flex flex-column justify-content-center">
-      <Image
-        alt="hero"
-        className="hero-image"
-        src="/img/hero-bg-1.jpg"
-        height="100%"
-        width="100%"
-        layout="fill"
-        objectFit="cover"
-        quality={100}
-      />
+      <div className="hero_bg_img">
+        <Image
+          alt="hero"
+          className="hero-image"
+          src="/img/hero-bg-1.jpg"
+          height="100%"
+          width="100%"
+          layout="fill"
+          objectFit="cover"
+          quality={100}
+        />
+      </div>
 
       <div className="container">
         <h1>MD Ashraful Islam</h1>
