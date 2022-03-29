@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <footer id="footer">
       <div className="container">
-        <h3>Brandon Johnson</h3>
+        <h3>Md Ashraful Islam</h3>
         <p>
           Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni
           eligendi fuga maxime saepe commodi placeat.

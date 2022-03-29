@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Typed from "typed.js";
+import { useEffect, useRef } from "react";
 
 import {
   FaFacebookF,
@@ -7,15 +9,35 @@ import {
   FaSkype,
   FaLinkedinIn,
 } from "react-icons/fa";
+
+const words = ["facebook", "twitter", "instagram"];
+
 export default function Hero() {
+  const el = useRef(null);
+
+  useEffect(() => {
+    const options = {
+      strings: words,
+      typeSpeed: 100,
+      backSpeed: 50,
+      loop: true,
+    };
+    const typed = new Typed(el.current, options);
+
+    return () => {
+      typed.destroy();
+    };
+  }, []);
+
   return (
     <>
       <section id="hero" className="d-flex flex-column justify-content-center">
         <div className="container">
           <h1>MD Ashraful Islam</h1>
           <p>
-            Im{" "}
+            I'm{" "}
             <span
+              ref={el}
               className="typed"
               data-typed-items="Designer, Developer, Freelancer, Photographer"
             ></span>
