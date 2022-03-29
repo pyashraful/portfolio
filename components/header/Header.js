@@ -10,6 +10,11 @@ import {
   BiEnvelope,
 } from "react-icons/bi";
 
+const navMenu = [
+  { name: "Home", icon: <BiHome />, link: "/" },
+  { name: "About", icon: <BiUser />, link: "/about" },
+];
+
 export default function Header() {
   return (
     <div>

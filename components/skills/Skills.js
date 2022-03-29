@@ -1,3 +1,14 @@
+import { Row, Col } from "react-bootstrap";
+
+const skills = [
+  { name: "HTML", level: 80 },
+  { name: "css", level: 80 },
+  { name: "JavaScript", level: 80 },
+  { name: "React js", level: 80 },
+  { name: "Node js", level: 80 },
+  { name: "MongoDB", level: 80 },
+];
+
 export default function Skills() {
   return (
     <section id="facts" className="facts">
@@ -14,99 +25,27 @@ export default function Skills() {
           </div>
 
           <div className="row skills-content">
-            <div className="col-lg-6">
-              <div className="progress">
-                <span className="skill">
-                  HTML <i className="val">100%</i>
-                </span>
-                <div className="progress-bar-wrap">
-                  <div
-                    className="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="100"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-              </div>
-
-              <div className="progress">
-                <span className="skill">
-                  CSS <i className="val">90%</i>
-                </span>
-                <div className="progress-bar-wrap">
-                  <div
-                    className="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="90"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-              </div>
-
-              <div className="progress">
-                <span className="skill">
-                  JavaScript <i className="val">75%</i>
-                </span>
-                <div className="progress-bar-wrap">
-                  <div
-                    className="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="75"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-lg-6">
-              <div className="progress">
-                <span className="skill">
-                  React js <i className="val">80%</i>
-                </span>
-                <div className="progress-bar-wrap">
-                  <div
-                    className="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="80"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-              </div>
-
-              <div className="progress">
-                <span className="skill">
-                  Node js <i className="val">90%</i>
-                </span>
-                <div className="progress-bar-wrap">
-                  <div
-                    className="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="90"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-              </div>
-
-              <div className="progress">
-                <span className="skill">
-                  MongoDB <i className="val">55%</i>
-                </span>
-                <div className="progress-bar-wrap">
-                  <div
-                    className="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="55"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-              </div>
-            </div>
+            <Row xs={1} md={2}>
+              {skills.map((skill) => (
+                <Col key={skill.name}>
+                  <div className="progress" key={skill.name}>
+                    <span className="skill">
+                      {skill.name} <i className="val">{`${skill.level}%`}</i>
+                    </span>
+                    <div className="progress-bar-wrap">
+                      <div
+                        style={{ width: `${skill.level}%` }}
+                        className="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="100"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+                </Col>
+              ))}
+            </Row>
           </div>
         </div>
       </section>
