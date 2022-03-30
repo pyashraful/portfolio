@@ -55,16 +55,10 @@ export default function Resume() {
           <div className="col-lg-6">
             <h3 className="resume-title">Projects</h3>
             <div className="resume-item">
-              <h4>Senior graphic design specialist</h4>
+              <h4>BookMe</h4>
               <ul>
-                <li>
-                  Lead in the design, development, and implementation of the
-                  graphic, layout, and production communication materials
-                </li>
-                <li>
-                  Delegate tasks to the 7 members of the design team and provide
-                  counsel on all aspects of the project.{" "}
-                </li>
+                <li>Bus ticket booking app</li>
+                <li>React app with graphically sit booking facilities</li>
                 <li>
                   Supervise the assessment of all graphic materials in order to
                   ensure quality and accuracy of the design
