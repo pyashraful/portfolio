@@ -29,7 +29,7 @@ export default function Resume() {
               <ul>
                 <li>Dhaka, Bangladesh</li>
                 <li>+880 1856-454-154</li>
-                <li>alice.barkley@example.com</li>
+                <li>pyashraful@gmail.com</li>
               </ul>
             </div>
 
@@ -53,13 +53,9 @@ export default function Resume() {
             </div>
           </div>
           <div className="col-lg-6">
-            <h3 className="resume-title">Professional Experience</h3>
+            <h3 className="resume-title">Projects</h3>
             <div className="resume-item">
               <h4>Senior graphic design specialist</h4>
-              <h5>2019 - Present</h5>
-              <p>
-                <em>Experion, New York, NY </em>
-              </p>
               <ul>
                 <li>
                   Lead in the design, development, and implementation of the
