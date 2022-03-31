@@ -70,20 +70,12 @@ export default function Resume() {
               </ul>
             </div>
             <div className="resume-item">
-              <h4>Graphic design specialist</h4>
-              <h5>2017 - 2018</h5>
-              <p>
-                <em>Stepping Stone Advertising, New York, NY</em>
-              </p>
+              <h4>Text-Reader</h4>
               <ul>
                 <li>
-                  Developed numerous marketing programs (logos,
-                  brochures,infographics, presentations, and advertisements).
+                  Built app to help kids who have communication difficulties.
                 </li>
-                <li>
-                  Managed up to 5 projects or tasks at a given time while under
-                  pressure
-                </li>
+                <li>React js with Web Speech API and SpeechSynthesis.</li>
                 <li>
                   Recommended and consulted with clients on the most appropriate
                   graphic design
