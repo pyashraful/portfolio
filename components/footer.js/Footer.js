@@ -1,3 +1,11 @@
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaInstagram,
+  FaSkype,
+  FaLinkedinIn,
+} from "react-icons/fa";
+
 export default function Footer() {
   return (
     <footer id="footer">
@@ -9,19 +17,19 @@ export default function Footer() {
         </p>
         <div className="social-links">
           <a href="#" className="twitter">
-            <i className="bx bxl-twitter"></i>
+            <FaTwitter />
           </a>
           <a href="#" className="facebook">
-            <i className="bx bxl-facebook"></i>
+            <FaFacebookF />
           </a>
           <a href="#" className="instagram">
-            <i className="bx bxl-instagram"></i>
+            <FaInstagram />
           </a>
           <a href="#" className="google-plus">
-            <i className="bx bxl-skype"></i>
+            <FaSkype />
           </a>
           <a href="#" className="linkedin">
-            <i className="bx bxl-linkedin"></i>
+            <FaLinkedinIn />
           </a>
         </div>
         <div className="copyright">

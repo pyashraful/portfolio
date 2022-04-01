@@ -59,14 +59,6 @@ export default function Resume() {
               <ul>
                 <li>Bus ticket booking app</li>
                 <li>React app with graphically sit booking facilities</li>
-                <li>
-                  Supervise the assessment of all graphic materials in order to
-                  ensure quality and accuracy of the design
-                </li>
-                <li>
-                  Oversee the efficient use of production project budgets
-                  ranging from $2,000 - $25,000
-                </li>
               </ul>
             </div>
             <div className="resume-item">
@@ -76,14 +68,6 @@ export default function Resume() {
                   Built app to help kids who have communication difficulties.
                 </li>
                 <li>React js with Web Speech API and SpeechSynthesis.</li>
-                <li>
-                  Recommended and consulted with clients on the most appropriate
-                  graphic design
-                </li>
-                <li>
-                  Created 4+ design presentations and proposals a month for
-                  clients and account managers
-                </li>
               </ul>
             </div>
           </div>
