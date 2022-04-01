@@ -49,11 +49,11 @@ export default function Header() {
                 <span>Portfolio</span>
               </a>
             </li>
-            <li>
+            {/* <li>
               <a href="#services" className="nav-link scrollto">
                 <BiServer className={styles.nav_icons} /> <span>Services</span>
               </a>
-            </li>
+            </li> */}
             <li>
               <a href="#contact" className="nav-link scrollto">
                 <BiEnvelope className={styles.nav_icons} /> <span>Contact</span>
