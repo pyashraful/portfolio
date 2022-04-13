@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import { Nav } from "react-bootstrap";
 import styles from "./header.module.css";
@@ -17,12 +18,25 @@ const navMenu = [
 ];
 
 export default function Header() {
+  const [isActive, setActive] = useState(false);
+
+  function handleToggle() {
+    setActive(!isActive);
+  }
+
   return (
     <div>
-      <FaListUl className="bi bi-list mobile-nav-toggle d-xl-none" />
+      <FaListUl
+        onClick={handleToggle}
+        className="bi bi-list mobile-nav-toggle d-xl-none"
+      />
       <header
         id={styles.header}
-        className="d-flex flex-column justify-content-center"
+        className={
+          isActive
+            ? `active` + `d-flex flex-column justify-content-center`
+            : `d-flex flex-column justify-content-center`
+        }
       >
         <nav id="navbar" className={` navbar ${styles.nav_menu}`}>
           <ul>
