@@ -1,7 +1,7 @@
 import {
+  FaGithubAlt,
   FaFacebookF,
   FaTwitter,
-  FaInstagram,
   FaSkype,
   FaLinkedinIn,
 } from "react-icons/fa";
@@ -16,20 +16,20 @@ export default function Footer() {
           eligendi fuga maxime saepe commodi placeat.
         </p>
         <div className="social-links">
+          <a href="#" className="github">
+            <FaGithubAlt />
+          </a>
+          <a href="#" className="linkedin">
+            <FaLinkedinIn />
+          </a>
+          <a href="#" className="google-plus">
+            <FaSkype />
+          </a>
           <a href="#" className="twitter">
             <FaTwitter />
           </a>
           <a href="#" className="facebook">
             <FaFacebookF />
-          </a>
-          <a href="#" className="instagram">
-            <FaInstagram />
-          </a>
-          <a href="#" className="google-plus">
-            <FaSkype />
-          </a>
-          <a href="#" className="linkedin">
-            <FaLinkedinIn />
           </a>
         </div>
         <div className="copyright">

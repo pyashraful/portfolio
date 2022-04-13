@@ -3,9 +3,9 @@ import Typed from "typed.js";
 import { useEffect, useRef } from "react";
 
 import {
+  FaGithubAlt,
   FaFacebookF,
   FaTwitter,
-  FaInstagram,
   FaSkype,
   FaLinkedinIn,
 } from "react-icons/fa";
@@ -43,20 +43,20 @@ export default function Hero() {
             ></span>
           </p>
           <div className="social-links">
+            <a href="#" className="github">
+              <FaGithubAlt className="hero_soccial_icon" />
+            </a>
+            <a href="#" className="linkedin">
+              <FaLinkedinIn className="hero_soccial_icon" />
+            </a>
+            <a href="#" className="google-plus">
+              <FaSkype className="hero_soccial_icon" />
+            </a>
             <a href="#" className="twitter">
               <FaTwitter className="hero_soccial_icon" />
             </a>
             <a href="#" className="facebook">
               <FaFacebookF />
-            </a>
-            <a href="#" className="instagram">
-              <FaInstagram className="hero_soccial_icon" />
-            </a>
-            <a href="#" className="google-plus">
-              <FaSkype className="hero_soccial_icon" />
-            </a>
-            <a href="#" className="linkedin">
-              <FaLinkedinIn className="hero_soccial_icon" />
             </a>
           </div>
         </div>

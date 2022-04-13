@@ -1,6 +1,7 @@
 import Navbar from "react-bootstrap/Navbar";
 import { Nav } from "react-bootstrap";
 import styles from "./header.module.css";
+import { FaListUl } from "react-icons/fa";
 import {
   BiHome,
   BiUser,
@@ -18,7 +19,7 @@ const navMenu = [
 export default function Header() {
   return (
     <div>
-      <i className="bi bi-list mobile-nav-toggle d-xl-none"></i>
+      <FaListUl className="bi bi-list mobile-nav-toggle d-xl-none" />
       <header
         id={styles.header}
         className="d-flex flex-column justify-content-center"
