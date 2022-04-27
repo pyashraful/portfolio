@@ -13,10 +13,6 @@ import Hero from "../components/hero/Hero";
 export default function Home() {
   const [isActive, setActive] = useState(false);
 
-  function handleToggle() {
-    setActive(!isActive);
-  }
-
   return (
     <div className={styles.container}>
       <Head>
@@ -25,19 +21,17 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <body className={isActive ? `mobile-nav-active` : null}>
-        <Header isActive={isActive} setActive={setActive} />
-        <Hero />
-        <main id="main">
-          <About />
-          <Skills />
-          <Resume />
-          <Portfolio />
-          {/* <Services /> */}
-          <Contact />
-        </main>
-        <Footer />
-      </body>
+      <Header isActive={isActive} setActive={setActive} />
+      <Hero />
+      <main id="main">
+        <About />
+        <Skills />
+        <Resume />
+        <Portfolio />
+        {/* <Services /> */}
+        <Contact />
+      </main>
+      <Footer />
     </div>
   );
 }

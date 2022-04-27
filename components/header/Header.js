@@ -23,14 +23,18 @@ export default function Header({ isActive, setActive }) {
   }
 
   return (
-    <div className={isActive ? `mobile-nav-active` : null}>
+    <div>
       <FaListUl
         onClick={handleToggle}
         className="bi bi-list mobile-nav-toggle d-xl-none"
       />
       <header
         id={styles.header}
-        className={`d-flex flex-column justify-content-center`}
+        className={
+          isActive
+            ? ` ${styles.mobileNav} d-flex flex-column justify-content-center`
+            : "d-flex flex-column justify-content-center"
+        }
       >
         <nav id="navbar" className={`navbar ${styles.nav_menu}`}>
           <ul>
