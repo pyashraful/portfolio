@@ -12,6 +12,7 @@ import Footer from "../components/footer.js/Footer";
 import Hero from "../components/hero/Hero";
 export default function Home() {
   const [isActive, setActive] = useState(false);
+  console.log("🚀 ~ file: index.js ~ line 15 ~ Home ~ isActive", isActive);
 
   return (
     <div className={styles.container}>

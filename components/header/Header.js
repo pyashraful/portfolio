@@ -2,7 +2,7 @@ import { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import { Nav } from "react-bootstrap";
 import styles from "./header.module.css";
-import { FaListUl } from "react-icons/fa";
+import { BsList, BsX } from "react-icons/bs";
 import {
   BiHome,
   BiUser,
@@ -18,16 +18,30 @@ const navMenu = [
 ];
 
 export default function Header({ isActive, setActive }) {
+  console.log("🚀 ~ file: Header.js ~ line 21 ~ Header ~ isActive", isActive);
   function handleToggle() {
     setActive(!isActive);
+    console.log(
+      "🚀 ~ file: Header.js ~ line 24 ~ handleToggle ~ isActive",
+      isActive
+    );
   }
 
   return (
-    <div>
-      <FaListUl
-        onClick={handleToggle}
-        className="bi bi-list mobile-nav-toggle d-xl-none"
-      />
+    <div className={isActive ? `mobile-nav-active` : null}>
+      {isActive ? (
+        <BsX
+          style={{ height: "38px", width: "38px" }}
+          onClick={handleToggle}
+          className="mobile-nav-toggle d-xl-none"
+        />
+      ) : (
+        <BsList
+          style={{ height: "38px", width: "38px" }}
+          onClick={handleToggle}
+          className=" mobile-nav-toggle d-xl-none"
+        />
+      )}
       <header
         id={styles.header}
         className={
