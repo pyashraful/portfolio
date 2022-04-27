@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   FaGithubAlt,
   FaFacebookF,
@@ -16,16 +17,31 @@ export default function Footer() {
           eligendi fuga maxime saepe commodi placeat.
         </p>
         <div className="social-links">
-          <a href="#" className="github">
+          <a
+            href="https://github.com/pyashraful"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="github"
+          >
             <FaGithubAlt />
           </a>
-          <a href="#" className="linkedin">
+          <a
+            href="https://www.linkedin.com/in/pyashraful/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="linkedin"
+          >
             <FaLinkedinIn />
           </a>
           <a href="#" className="google-plus">
             <FaSkype />
           </a>
-          <a href="#" className="twitter">
+          <a
+            href="https://twitter.com/PyAshraful"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="twitter"
+          >
             <FaTwitter />
           </a>
           <a href="#" className="facebook">
