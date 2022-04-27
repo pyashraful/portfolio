@@ -17,28 +17,22 @@ const navMenu = [
   { name: "About", icon: <BiUser />, link: "/about" },
 ];
 
-export default function Header() {
-  const [isActive, setActive] = useState(false);
-
+export default function Header({ isActive, setActive }) {
   function handleToggle() {
     setActive(!isActive);
   }
 
   return (
-    <div>
+    <div className={isActive ? `mobile-nav-active` : null}>
       <FaListUl
         onClick={handleToggle}
         className="bi bi-list mobile-nav-toggle d-xl-none"
       />
       <header
         id={styles.header}
-        className={
-          isActive
-            ? `active` + `d-flex flex-column justify-content-center`
-            : `d-flex flex-column justify-content-center`
-        }
+        className={`d-flex flex-column justify-content-center`}
       >
-        <nav id="navbar" className={` navbar ${styles.nav_menu}`}>
+        <nav id="navbar" className={`navbar ${styles.nav_menu}`}>
           <ul>
             <li>
               <Nav.Link href="#hero" className="nav-link scrollto active">

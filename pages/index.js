@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Header from "../components/header/Header";
@@ -10,6 +11,12 @@ import Contact from "../components/Contact/Contact";
 import Footer from "../components/footer.js/Footer";
 import Hero from "../components/hero/Hero";
 export default function Home() {
+  const [isActive, setActive] = useState(false);
+
+  function handleToggle() {
+    setActive(!isActive);
+  }
+
   return (
     <div className={styles.container}>
       <Head>
@@ -18,17 +25,19 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
-      <Hero />
-      <main id="main">
-        <About />
-        <Skills />
-        <Resume />
-        <Portfolio />
-        {/* <Services /> */}
-        <Contact />
-      </main>
-      <Footer />
+      <body className={isActive ? `mobile-nav-active` : null}>
+        <Header isActive={isActive} setActive={setActive} />
+        <Hero />
+        <main id="main">
+          <About />
+          <Skills />
+          <Resume />
+          <Portfolio />
+          {/* <Services /> */}
+          <Contact />
+        </main>
+        <Footer />
+      </body>
     </div>
   );
 }
