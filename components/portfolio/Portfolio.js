@@ -26,6 +26,7 @@ export default function Portfolio() {
                 alt=""
                 width="100%"
                 height="100%"
+                layout="responsive"
               />
               <div className="portfolio-info">
                 <h4>App 1</h4>
@@ -95,6 +96,7 @@ export default function Portfolio() {
                 alt=""
                 width="100%"
                 height="100%"
+                layout="responsive"
               />
               <div className="portfolio-info">
                 <h4>App 2</h4>
