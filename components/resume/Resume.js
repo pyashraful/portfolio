@@ -79,6 +79,15 @@ export default function Resume() {
                 <li>React js with Web Speech API and SpeechSynthesis.</li>
               </ul>
             </div>
+
+            <h3 className="resume-title">INTEREST</h3>
+            <div className="resume-item">
+              <h4>BookMe</h4>
+              <ul>
+                <li>Bus ticket booking app</li>
+                <li>React app with graphically sit booking facilities</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
