@@ -70,6 +70,15 @@ export default function Resume() {
                 <li>React js with Web Speech API and SpeechSynthesis.</li>
               </ul>
             </div>
+            <div className="resume-item">
+              <h4>E-Store</h4>
+              <ul>
+                <li>
+                  Built app to help kids who have communication difficulties.
+                </li>
+                <li>React js with Web Speech API and SpeechSynthesis.</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
