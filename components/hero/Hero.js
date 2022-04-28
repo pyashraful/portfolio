@@ -43,16 +43,31 @@ export default function Hero() {
             ></span>
           </p>
           <div className="social-links">
-            <a href="#" className="github">
+            <a
+              href="https://github.com/pyashraful"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="github"
+            >
               <FaGithubAlt />
             </a>
-            <a href="#" className="linkedin">
+            <a
+              href="https://www.linkedin.com/in/pyashraful/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="linkedin"
+            >
               <FaLinkedinIn />
             </a>
             <a href="#" className="google-plus">
               <FaSkype />
             </a>
-            <a href="#" className="twitter">
+            <a
+              href="https://twitter.com/PyAshraful"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="twitter"
+            >
               <FaTwitter />
             </a>
             <a href="#" className="facebook">
@@ -61,18 +76,6 @@ export default function Hero() {
           </div>
         </div>
       </section>
-      {/* <div className="hero_bg_img">
-        <Image
-          alt="hero"
-          className="hero-image"
-          src="/img/hero-bg-1.jpg"
-          height="100%"
-          width="100%"
-          layout="fill"
-          objectFit="cover"
-          quality={100}
-        />
-      </div> */}
     </>
   );
 }
