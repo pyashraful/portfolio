@@ -35,7 +35,7 @@ export default function Hero() {
         <div className="container">
           <h1>MD Ashraful Islam</h1>
           <p>
-            I'm{" "}
+            I&apos;m{" "}
             <span
               ref={el}
               className="typed"
@@ -44,16 +44,16 @@ export default function Hero() {
           </p>
           <div className="social-links">
             <a href="#" className="github">
-              <FaGithubAlt className="hero_soccial_icon" />
+              <FaGithubAlt />
             </a>
             <a href="#" className="linkedin">
-              <FaLinkedinIn className="hero_soccial_icon" />
+              <FaLinkedinIn />
             </a>
             <a href="#" className="google-plus">
-              <FaSkype className="hero_soccial_icon" />
+              <FaSkype />
             </a>
             <a href="#" className="twitter">
-              <FaTwitter className="hero_soccial_icon" />
+              <FaTwitter />
             </a>
             <a href="#" className="facebook">
               <FaFacebookF />
