@@ -59,7 +59,12 @@ export default function Hero() {
             >
               <FaLinkedinIn />
             </a>
-            <a href="#" className="google-plus">
+            <a
+              href="skype:live:.cid.9cee777dbefeaa18?chat"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="google-plus"
+            >
               <FaSkype />
             </a>
             <a
