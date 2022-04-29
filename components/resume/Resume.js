@@ -82,10 +82,10 @@ export default function Resume() {
 
             <h3 className="resume-title">INTEREST</h3>
             <div className="resume-item">
-              <h4>BookMe</h4>
               <ul>
-                <li>Bus ticket booking app</li>
-                <li>React app with graphically sit booking facilities</li>
+                <li>React Native</li>
+                <li>Progressive Web Apps (PWA)</li>
+                <li>Web Assembly</li>
               </ul>
             </div>
           </div>
