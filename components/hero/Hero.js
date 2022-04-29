@@ -10,7 +10,7 @@ import {
   FaLinkedinIn,
 } from "react-icons/fa";
 
-const words = ["Frontend Engineer", "JavaScrip Developer", "instagram"];
+const words = ["Frontend Engineer", "JavaScrip Developer"];
 
 export default function Hero() {
   const el = useRef(null);

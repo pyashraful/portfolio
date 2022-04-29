@@ -1,10 +1,14 @@
+import axios from "axios";
 import { useForm } from "react-hook-form";
+import useSWR from "swr";
 
 export default function Contact() {
   const { register, handleSubmit } = useForm();
 
-  const onSubmit = (data) => {
+  const onSubmit = async (data) => {
     console.log("🚀 ~ file: Contact.js ~ line 7 ~ onSubmit ~ data", data);
+    const res = await axios.post("/api/contact", data);
+    console.log(res.data);
   };
 
   return (
