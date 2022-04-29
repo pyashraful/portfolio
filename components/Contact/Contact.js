@@ -1,4 +1,12 @@
+import { useForm } from "react-hook-form";
+
 export default function Contact() {
+  const { register, handleSubmit } = useForm();
+
+  const onSubmit = (data) => {
+    console.log("🚀 ~ file: Contact.js ~ line 7 ~ onSubmit ~ data", data);
+  };
+
   return (
     <section id="contact" className="contact">
       <div className="container" data-aos="fade-up">
@@ -30,12 +38,7 @@ export default function Contact() {
           </div>
 
           <div className="col-lg-8 mt-5 mt-lg-0">
-            <form
-              action="forms/contact.php"
-              method="post"
-              role="form"
-              className="php-email-form"
-            >
+            <form onSubmit={handleSubmit(onSubmit)} className="php-email-form">
               <div className="row">
                 <div className="col-md-6 form-group">
                   <input
@@ -45,6 +48,7 @@ export default function Contact() {
                     id="name"
                     placeholder="Your Name"
                     required
+                    {...register("name")}
                   />
                 </div>
                 <div className="col-md-6 form-group mt-3 mt-md-0">
@@ -55,6 +59,7 @@ export default function Contact() {
                     id="email"
                     placeholder="Your Email"
                     required
+                    {...register("email")}
                   />
                 </div>
               </div>
@@ -66,6 +71,7 @@ export default function Contact() {
                   id="subject"
                   placeholder="Subject"
                   required
+                  {...register("subject")}
                 />
               </div>
               <div className="form-group mt-3">
@@ -75,6 +81,7 @@ export default function Contact() {
                   rows="5"
                   placeholder="Message"
                   required
+                  {...register("message")}
                 ></textarea>
               </div>
               <div className="my-3">
